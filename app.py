@@ -16,7 +16,7 @@ def home():
 def review():
 
     # extraia a avaliação do cliente escrevendo a "chave" apropriada dos dados JSON
-    review = request.json.get('')
+    review = request.json.get('emoção:')
 
     # verifique se a avaliação do cliente está vazia, então retorne o erro
     if not review:
