@@ -11,11 +11,11 @@ $(document).ready(function(){
     $('').click(function(){
 
         //  Obtenha o valor do texto da área de texto usando o método 'val()'
-        let text_value = $('').val()
+        let text_value = $('p').val()
 
         //  Converta-o em um objeto JS.
         //  Forneça uma "chave" aqui e escreva o mesmo no arquivo app.py também para extrair dados
-        let input_text = {'' : text_value}
+        let input_text = {'emoção:' : text_value}
         console.log(input_text)
 
         //  requisição ajax
